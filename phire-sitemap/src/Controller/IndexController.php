@@ -16,7 +16,7 @@ class IndexController extends AbstractController
     public function index()
     {
         if ($this->application->isRegistered('phire-content')) {
-            $sitemap = (new Model\Sitemap())->getSitemap();
+            $sitemap = (new Model\Sitemap())->getSitemap($this->application->module('phire-sitemap')['type_id']);
             $this->prepareView('sitemap.php');
             $this->view->urls      = $sitemap['urls'];
             $this->view->deepest   = $sitemap['deepest'];

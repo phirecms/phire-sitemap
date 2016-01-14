@@ -15,6 +15,19 @@ return [
                 'action'     => 'index',
             ]
         ],
+        'events' => [
+            [
+                'name'     => 'app.send.pre',
+                'action'   => 'Phire\Sitemap\Event\Sitemap::init',
+                'priority' => 1000
+            ],
+            [
+                'name'     => 'app.send.post',
+                'action'   => 'Phire\Sitemap\Event\Sitemap::parseSitemap',
+                'priority' => 1000
+            ]
+        ],
+        'type_id'   => null,
         'frequency' => 'monthly'
     ]
 ];
