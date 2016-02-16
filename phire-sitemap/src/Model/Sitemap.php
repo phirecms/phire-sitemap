@@ -18,11 +18,23 @@ class Sitemap extends AbstractModel
     {
         $urls = [];
         if (null !== $tid) {
-            $content = \Phire\Content\Table\Content::findBy([
-                'type_id' => (int)$tid,
-                'status'  => 1,
-                'roles'   => 'a:0:{}'
-            ], ['order' => 'order, id ASC'])->rows();
+            if (is_array($tid)) {
+                $content = [];
+                foreach ($tid as $t) {
+                    $c = \Phire\Content\Table\Content::findBy([
+                        'type_id' => (int)$t,
+                        'status'  => 1,
+                        'roles'   => 'a:0:{}'
+                    ], ['order' => 'order, id ASC'])->rows();
+                    $content = array_merge($content, $c);
+                }
+            } else {
+                $content = \Phire\Content\Table\Content::findBy([
+                    'type_id' => (int)$tid,
+                    'status'  => 1,
+                    'roles'   => 'a:0:{}'
+                ], ['order' => 'order, id ASC'])->rows();
+            }
         } else {
             $content = \Phire\Content\Table\Content::findBy([
                 'status' => 1,
