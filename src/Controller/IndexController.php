@@ -1,10 +1,31 @@
 <?php
+/**
+ * Phire Sitemap Module
+ *
+ * @link       https://github.com/phirecms/phire-sitemap
+ * @author     Nick Sagona, III <dev@nolainteractive.com>
+ * @copyright  Copyright (c) 2009-2016 NOLA Interactive, LLC. (http://www.nolainteractive.com)
+ * @license    http://www.phirecms.org/license     New BSD License
+ */
 
+/**
+ * @namespace
+ */
 namespace Phire\Sitemap\Controller;
 
 use Phire\Sitemap\Model;
 use Phire\Controller\AbstractController;
 
+/**
+ * Sitemap Index Controller class
+ *
+ * @category   Phire\Sitemap
+ * @package    Phire\Sitemap
+ * @author     Nick Sagona, III <dev@nolainteractive.com>
+ * @copyright  Copyright (c) 2009-2016 NOLA Interactive, LLC. (http://www.nolainteractive.com)
+ * @license    http://www.phirecms.org/license     New BSD License
+ * @version    1.0.0
+ */
 class IndexController extends AbstractController
 {
 

@@ -1,11 +1,32 @@
 <?php
+/**
+ * Phire Sitemap Module
+ *
+ * @link       https://github.com/phirecms/phire-sitemap
+ * @author     Nick Sagona, III <dev@nolainteractive.com>
+ * @copyright  Copyright (c) 2009-2016 NOLA Interactive, LLC. (http://www.nolainteractive.com)
+ * @license    http://www.phirecms.org/license     New BSD License
+ */
 
+/**
+ * @namespace
+ */
 namespace Phire\Sitemap\Event;
 
 use Phire\Sitemap\Model;
 use Pop\Application;
 use Phire\Controller\AbstractController;
 
+/**
+ * Sitemap Event class
+ *
+ * @category   Phire\Sitemap
+ * @package    Phire\Sitemap
+ * @author     Nick Sagona, III <dev@nolainteractive.com>
+ * @copyright  Copyright (c) 2009-2016 NOLA Interactive, LLC. (http://www.nolainteractive.com)
+ * @license    http://www.phirecms.org/license     New BSD License
+ * @version    1.0.0
+ */
 class Sitemap
 {
 

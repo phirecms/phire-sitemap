@@ -1,10 +1,31 @@
 <?php
+/**
+ * Phire Sitemap Module
+ *
+ * @link       https://github.com/phirecms/phire-sitemap
+ * @author     Nick Sagona, III <dev@nolainteractive.com>
+ * @copyright  Copyright (c) 2009-2016 NOLA Interactive, LLC. (http://www.nolainteractive.com)
+ * @license    http://www.phirecms.org/license     New BSD License
+ */
 
+/**
+ * @namespace
+ */
 namespace Phire\Sitemap\Model;
 
 use Phire\Model\AbstractModel;
 use Pop\Nav\Nav;
 
+/**
+ * Sitemap Model class
+ *
+ * @category   Phire\Sitemap
+ * @package    Phire\Sitemap
+ * @author     Nick Sagona, III <dev@nolainteractive.com>
+ * @copyright  Copyright (c) 2009-2016 NOLA Interactive, LLC. (http://www.nolainteractive.com)
+ * @license    http://www.phirecms.org/license     New BSD License
+ * @version    1.0.0
+ */
 class Sitemap extends AbstractModel
 {
 
