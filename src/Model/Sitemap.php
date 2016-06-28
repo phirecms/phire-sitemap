@@ -149,9 +149,9 @@ class Sitemap extends AbstractModel
     /**
      * Get navigation children
      *
-     * @param  \ArrayObject|array $content
-     * @param  int                $depth
-     * @param  boolean            $cat
+     * @param  mixed   $content
+     * @param  int     $depth
+     * @param  boolean $cat
      * @return array
      */
     protected function getNavChildren($content, $depth = 0, $cat = false)
